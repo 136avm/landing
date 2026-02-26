@@ -81,6 +81,15 @@
       font-family: inherit;
     }
     .nav-links button:hover { color: #3b82f6; }
+    .nav-links .nav-external {
+      color: #e5e7eb;
+      font-weight: 500;
+      font-size: 1rem;
+      padding: .5rem 0;
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .nav-links .nav-external:hover { color: #3b82f6; }
 
     @media (max-width: 768px) {
       .navbar { padding: .75rem 1.5rem; }
@@ -111,6 +120,15 @@
       }
       .nav-links button:last-child { border-bottom: none; }
       .nav-links button:hover { background-color: rgba(59,130,246,.1) !important; }
+      .nav-links .nav-external {
+        padding: 1rem 2rem;
+        width: 100%;
+        text-align: left;
+        font-size: 1.1rem;
+        border-bottom: 1px solid rgba(59,130,246,.2);
+        display: block;
+      }
+      .nav-links .nav-external:hover { background-color: rgba(59,130,246,.1); color: #3b82f6; }
     }
 
     /* ─── HERO ─── */
@@ -316,6 +334,7 @@
       <button onclick="goTo('about')">Sobre mí</button>
       <button onclick="goTo('portfolio')">Proyectos</button>
       <button onclick="goTo('contact')">Contacto</button>
+      <a href="https://blog.antoniovergara.es" target="_blank" rel="noopener noreferrer" class="nav-external">Hacking</a>
     </div>
   </nav>
 
