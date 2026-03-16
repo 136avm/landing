@@ -383,6 +383,7 @@
       <h2>Contacto</h2>
       <p class="contact-text">¿Tienes algún proyecto en mente o quieres colaborar? ¡Escríbeme un mensaje!</p>
       <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+        <input type="hidden" name="sender_ip" id="senderIp" value="Obteniendo...">
         <input type="text" name="name" placeholder="Nombre" required>
         <input type="email" name="email" id="emailInput" placeholder="Email" required oninput="validateEmail(this)">
         <span class="form-error" id="emailError">Email no válido</span>
@@ -516,6 +517,16 @@
         .then(() => { alert('¡Correo enviado correctamente!'); form.reset(); })
         .catch(() => alert('Error al enviar el correo, intenta de nuevo.'));
     }
+
+    // Obtener IP al cargar
+  fetch('https://api.ipify.org?format=json')
+    .then(r => r.json())
+    .then(data => {
+      document.getElementById('senderIp').value = data.ip;
+    })
+    .catch(() => {
+      document.getElementById('senderIp').value = 'No disponible';
+    });
   </script>
 </body>
 </html>
