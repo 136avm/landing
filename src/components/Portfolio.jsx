@@ -3,7 +3,9 @@ import { projects } from '../data/projects'
 export default function Portfolio() {
   return (
     <section id="portfolio">
-      <h2>Proyectos</h2>
+      <div className="section-title">
+        <h2>Proyectos</h2>
+      </div>
       <div className="slider">
         {projects.map(p => (
           <div key={p.title} className="card">

@@ -27,7 +27,7 @@ export default function Navbar() {
 
   return (
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`} id="navbar">
-      <div className="navbar-logo" onClick={() => goTo('hero')}>Antonio Vergara</div>
+      <div className="navbar-logo" onClick={() => goTo('hero')}>Antonio <span>Vergara</span></div>
       <button className="menu-toggle" onClick={() => setOpen(o => !o)} aria-label="Toggle menu">
         {open ? '✕' : '☰'}
       </button>

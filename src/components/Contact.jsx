@@ -28,17 +28,21 @@ export default function Contact() {
 
   return (
     <section id="contact">
-      <h2>Contacto</h2>
-      <p className="contact-text">¿Tienes algún proyecto en mente o quieres colaborar? ¡Escríbeme un mensaje!</p>
-      <form className="contact-form" ref={formRef} onSubmit={handleSubmit}>
-        <input type="hidden" name="sender_ip" value={ip} readOnly />
-        <input type="text" name="name" placeholder="Nombre" required />
-        <input type="email" name="email" placeholder="Email" required onChange={validateEmail} />
-        {emailError && <span className="form-error" style={{ display: 'block' }}>Email no válido</span>}
-        <input type="text" name="subject" placeholder="Asunto" required />
-        <textarea name="message" placeholder="Mensaje" required />
-        <button type="submit" className="submit-btn">Enviar</button>
-      </form>
+      <div className="inner">
+        <div className="section-title">
+          <h2>Contacto</h2>
+        </div>
+        <p className="contact-text">¿Tienes algún proyecto en mente o quieres colaborar? Escríbeme un mensaje.</p>
+        <form className="contact-form" ref={formRef} onSubmit={handleSubmit}>
+          <input type="hidden" name="sender_ip" value={ip} readOnly />
+          <input type="text" name="name" placeholder="Nombre" required />
+          <input type="email" name="email" placeholder="Email" required onChange={validateEmail} />
+          {emailError && <span className="form-error" style={{ display: 'block' }}>Email no válido</span>}
+          <input type="text" name="subject" placeholder="Asunto" required />
+          <textarea name="message" placeholder="Mensaje" required />
+          <button type="submit" className="submit-btn">Enviar mensaje</button>
+        </form>
+      </div>
     </section>
   )
 }
