@@ -34,6 +34,7 @@ export default function Navbar() {
       <div className={`nav-links${open ? ' open' : ''}`}>
         <button onClick={() => goTo('hero')}>Inicio</button>
         <button onClick={() => goTo('about')}>Sobre mí</button>
+        <button onClick={() => goTo('certifications')}>Certificaciones</button>
         <button onClick={() => goTo('portfolio')}>Proyectos</button>
         <button onClick={() => goTo('contact')}>Contacto</button>
         <a href="https://blog.antoniovergara.es" target="_blank" rel="noopener noreferrer" className="nav-external">Hacking</a>

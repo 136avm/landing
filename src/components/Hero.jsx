@@ -5,7 +5,7 @@ export default function Hero() {
     <section id="hero">
       <div className="hero-content">
         <h1>Antonio Vergara</h1>
-        <p>Estudiante de Ingeniería Informática | Especialista en IT y automatización de procesos</p>
+        <p>Estudiante de Ingeniería Informática | Junior Pentester y Especialista en IT</p>
         <div className="hero-buttons">
           <button
             className="btn-primary"

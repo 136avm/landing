@@ -6,8 +6,8 @@ export default function About() {
       <h2>Sobre mí</h2>
       <div className="about-container">
         <div className="about-text">
-          <p>Soy un apasionado de la programación y la administración de sistemas. Me encanta crear <strong>productos digitales, laboratorios virtuales y herramientas técnicas</strong> que faciliten el aprendizaje, la práctica y la automatización de tareas en redes y sistemas. También me gusta mucho el mundo de <strong>IoT</strong> y sus aplicaciones en la <strong>Industria 4.0</strong>.</p>
-          <p>Actualmente estoy cursando el <strong>Grado en Ingeniería Informática</strong> en la Universidad de Murcia, con mención en <strong>Tecnologías de la Información</strong>. Siempre busco mejorar mis habilidades y aprender nuevas tecnologías para crear soluciones útiles y reproducibles.</p>
+          <p>Me metí en el mundo del <strong>hacking ético</strong> hace unos años y desde entonces es lo que más me engancha. Me gusta entender cómo funcionan los sistemas por dentro, encontrar fallos y aprender a explotarlos de forma controlada. También tengo bastante experiencia en <strong>administración de sistemas</strong>, redes y entornos virtualizados, que al final es la base para entender bien la seguridad.</p>
+          <p>Estoy cursando el <strong>Grado en Ingeniería Informática</strong> en la Universidad de Murcia, con mención en <strong>Tecnologías de la Información</strong>. Fuera de la carrera dedico tiempo a laboratorios de CTF, máquinas de plataformas como Hack The Box y a seguir sacando certificaciones ofensivas.</p>
         </div>
         <div className="skills-section">
           <h3>Mis habilidades</h3>
