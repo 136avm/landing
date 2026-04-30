@@ -219,6 +219,26 @@ main { margin-top: var(--navbar-h); }
   color: var(--accent);
 }
 
+.lang-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--r-sm);
+  font-family: inherit;
+  transition: all var(--ease);
+  margin-left: 0.25rem;
+}
+.lang-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-dim);
+}
+
 @media (max-width: 768px) {
   .menu-toggle { display: flex; align-items: center; }
   .nav-links {
@@ -251,6 +271,15 @@ main { margin-top: var(--navbar-h); }
   }
   .nav-links .nav-external {
     margin-top: 0.25rem;
+    border: 1px solid var(--border);
+  }
+  .lang-toggle {
+    margin: 0.25rem 0 0;
+    padding: 0.85rem 1rem;
+    width: 100%;
+    text-align: left;
+    font-size: 0.95rem;
+    border-radius: var(--r-sm);
     border: 1px solid var(--border);
   }
 }
@@ -550,6 +579,89 @@ main { margin-top: var(--navbar-h); }
 }
 
 .card-skills { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 0.75rem; }
+
+/* ═══════════════════════════════════════════
+   WRITEUPS
+═══════════════════════════════════════════ */
+#writeups {
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+#writeups .inner {
+  max-width: var(--container);
+  margin-inline: auto;
+  padding: var(--section-y) var(--gutter);
+}
+
+.writeups-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.writeups-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 2rem 2.5rem;
+  min-width: 160px;
+  text-align: center;
+}
+
+.writeups-number {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.writeups-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.writeups-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.writeups-info p {
+  font-size: 0.975rem;
+  color: var(--text-dim);
+  line-height: 1.8;
+  max-width: 540px;
+}
+
+.writeups-platforms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+@media (max-width: 640px) {
+  .writeups-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .writeups-stat {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+  }
+  .writeups-number { font-size: 2.5rem; }
+}
 
 /* ═══════════════════════════════════════════
    CONTACT

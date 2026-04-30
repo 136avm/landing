@@ -1,8 +1,12 @@
 import { useState, useEffect } from 'react'
+import { useLang } from '../context/LangContext'
+import { t } from '../data/translations'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+  const { lang, toggle } = useLang()
+  const tx = t[lang].nav
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50)
@@ -32,12 +36,14 @@ export default function Navbar() {
         {open ? '✕' : '☰'}
       </button>
       <div className={`nav-links${open ? ' open' : ''}`}>
-        <button onClick={() => goTo('hero')}>Inicio</button>
-        <button onClick={() => goTo('about')}>Sobre mí</button>
-        <button onClick={() => goTo('certifications')}>Certificaciones</button>
-        <button onClick={() => goTo('portfolio')}>Proyectos</button>
-        <button onClick={() => goTo('contact')}>Contacto</button>
-        <a href="https://blog.antoniovergara.es" target="_blank" rel="noopener noreferrer" className="nav-external">Hacking</a>
+        <button onClick={() => goTo('hero')}>{tx.inicio}</button>
+        <button onClick={() => goTo('about')}>{tx.sobre}</button>
+        <button onClick={() => goTo('certifications')}>{tx.certs}</button>
+        <button onClick={() => goTo('contact')}>{tx.contacto}</button>
+        <a href="https://blog.antoniovergara.es" target="_blank" rel="noopener noreferrer" className="nav-external">{tx.hacking}</a>
+        <button className="lang-toggle" onClick={toggle} aria-label="Toggle language">
+          {lang === 'es' ? 'EN' : 'ES'}
+        </button>
       </div>
     </nav>
   )
