@@ -39,6 +39,7 @@ export default function Navbar() {
         <button onClick={() => goTo('hero')}>{tx.inicio}</button>
         <button onClick={() => goTo('about')}>{tx.sobre}</button>
         <button onClick={() => goTo('certifications')}>{tx.certs}</button>
+        <button onClick={() => goTo('writeups')}>{tx.experiencia}</button>
         <button onClick={() => goTo('contact')}>{tx.contacto}</button>
         <a href="https://blog.antoniovergara.es" target="_blank" rel="noopener noreferrer" className="nav-external">{tx.hacking}</a>
         <button className="lang-toggle" onClick={toggle} aria-label="Toggle language">

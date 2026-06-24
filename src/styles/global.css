@@ -649,6 +649,34 @@ main { margin-top: var(--navbar-h); }
   gap: 0.4rem;
 }
 
+.writeups-profiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.profile-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  background: var(--bg-card);
+  color: var(--text-dim);
+  font-size: 0.82rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.profile-link:hover {
+  border-color: var(--profile-accent, var(--accent));
+  color: var(--profile-accent, var(--accent));
+  background: color-mix(in srgb, var(--profile-accent, var(--accent)) 8%, transparent);
+}
+
+
 @media (max-width: 640px) {
   .writeups-container {
     grid-template-columns: 1fr;
