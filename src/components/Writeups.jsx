@@ -30,7 +30,7 @@ export default function Writeups() {
         </div>
         <div className="writeups-container">
           <div className="writeups-stat">
-            <span className="writeups-number">+16</span>
+            <span className="writeups-number">+30</span>
             <span className="writeups-label">{tx.label}</span>
           </div>
           <div className="writeups-info">
