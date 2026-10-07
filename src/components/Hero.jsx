@@ -14,7 +14,7 @@ export default function Hero() {
         <h1>Antonio Vergara</h1>
         <p className="hero-subtitle">{tx.subtitle}</p>
         <div className="hero-buttons">
-          <a href="https://blog.antoniovergara.es" target="_blank" rel="noopener noreferrer" className="btn-primary">
+          <a href="https://avmsec.gitbook.io/avmsec-docs" target="_blank" rel="noopener noreferrer" className="btn-primary">
             {tx.writeups}
           </a>
           <a href="/assets/CV%20Antonio%20Vergara.pdf" download className="btn-secondary">
