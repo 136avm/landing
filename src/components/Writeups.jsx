@@ -53,7 +53,7 @@ export default function Writeups() {
                 </a>
               ))}
             </div>
-            <a href="https://blog.antoniovergara.es" target="_blank" rel="noopener noreferrer" className="btn-primary">
+            <a href="https://avmsec.gitbook.io/avmsec-docs" target="_blank" rel="noopener noreferrer" className="btn-primary">
               {tx.cta}
             </a>
           </div>
